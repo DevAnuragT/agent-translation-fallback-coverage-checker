@@ -1,0 +1,59 @@
+{
+  "name": "review-translation-fallback-coverage-checker",
+  "description": "Run Translation Fallback Coverage Checker",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "locales": {
+            "type": "array",
+            "description": "locales"
+          },
+          "translation_keys": {
+            "type": "object",
+            "description": "translation keys"
+          },
+          "fallback_locale": {
+            "type": "string",
+            "description": "fallback locale"
+          },
+          "missing_key_policy": {
+            "type": "string",
+            "description": "missing key policy"
+          }
+        },
+        "required": [
+          "locales",
+          "translation_keys",
+          "fallback_locale",
+          "missing_key_policy"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-translation-fallback-coverage-checker.py",
+    "runtime": "python3"
+  }
+}

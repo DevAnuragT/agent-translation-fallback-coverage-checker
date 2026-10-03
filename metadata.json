@@ -1,0 +1,29 @@
+{
+  "slug": "translation-fallback-coverage-checker",
+  "title": "Translation Fallback Coverage Checker",
+  "category": "developer-tools",
+  "description": "Review localized UI keys for explicit fallback and missing-string handling.",
+  "fields": {
+    "locales": {
+      "label": "locales",
+      "kind": "list",
+      "minimum": 1
+    },
+    "translation_keys": {
+      "label": "translation keys",
+      "kind": "object",
+      "minimum": 1
+    },
+    "fallback_locale": {
+      "label": "fallback locale",
+      "kind": "required",
+      "minimum": 0
+    },
+    "missing_key_policy": {
+      "label": "missing key policy",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

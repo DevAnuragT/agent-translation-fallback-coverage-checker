@@ -1,0 +1,10 @@
+{
+  "locales": [
+    "record-1"
+  ],
+  "translation_keys": {
+    "sample": "evidence"
+  },
+  "fallback_locale": "evidence-record",
+  "missing_key_policy": "evidence-record"
+}

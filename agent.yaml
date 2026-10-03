@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: translation-fallback-coverage-checker
+version: 0.1.0
+description: Review localized UI keys for explicit fallback and missing-string handling.
+skills:
+  - translation-fallback-coverage-checker-skill
+tools:
+  - review-translation-fallback-coverage-checker
+tags:
+  - developer-tools
+  - evidence-driven
